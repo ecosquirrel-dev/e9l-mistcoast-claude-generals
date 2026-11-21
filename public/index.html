@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mistcoast – Claude Generals</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="left">
+    <div id="top">
+      <aside id="ctlbar" aria-label="Controls"></aside>
+      <div id="mapwrap"><canvas id="map"></canvas></div>
+    </div>
+    <aside id="panel"><div id="side"></div></aside>
+  </div>
+  <section id="chat" aria-label="Generals' chat"></section>
+  <script>
+    // load scripts with a timestamp so the browser never uses a stale cached copy
+    for (const f of ['js/game.js', 'js/ui.js']) document.write(`<script src="${f}?v=${Date.now()}"><\/script>`);
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Scratch files
+_*.js
+_*.py

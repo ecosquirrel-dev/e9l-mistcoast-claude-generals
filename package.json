@@ -1,0 +1,18 @@
+{
+  "name": "e9l-mistcoast-claude-generals",
+  "version": "1.0.0",
+  "description": "Agent-only browser wargame: every faction is a Claude general that negotiates, betrays and commands its army.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "python server/serve.py",
+    "test": "node test/smoke-test.js",
+    "check": "node --check public/js/game.js && node --check public/js/ui.js",
+    "stats:ai": "node tools/ai-stats.js",
+    "stats:diplomacy": "node tools/dip-stats.js",
+    "stats:roles": "node tools/role-stats.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
